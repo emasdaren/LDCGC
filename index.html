@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Java Applet</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CheerpJ applet test</title>
     <script src="https://cjrtnc.leaningtech.com/3.0/cj3loader.js"></script>
-</head>
-<body>
-    <h1>My Java Applet</h1>
+  </head>
+  <body>
+    <applet
+      archive="Barangay_Secretary.jar"
+      code="Barangay_Secretary.Barangay_Secretary"
+      height="900"
+      width="900"
+    ></applet>
     <script>
-        // Load the applet
-        var applet = cheerpj.run({
-            "class": "Barangay_Secretary", // Replace with your applet's main class name
-            "width": 800,
-            "height": 600,
-            "codebase": "./" // Adjust if your applet files are in a different folder
-        });
+      cheerpjInit();
     </script>
-</body>
+  </body>
 </html>
